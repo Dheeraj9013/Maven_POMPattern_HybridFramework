@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+<suite name="Test Regression Suite" parallel="tests"
+	thread-count="3">
+
+	<listeners>
+		<listener
+			class-name="com.qa.hubspot.testlistners.ExtentReportListener" />
+
+	</listeners>
+
+	<test name="LoginPage Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="80.0" />
+		<classes>
+			<class name="com.qa.hubspot.test.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="AccountsPage Test">
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="87.0" />
+		
+		<classes>
+			<class name="com.qa.hubspot.test.AccountPageTest" />
+		</classes>
+	</test>
+	
+	<test name="ShoppingCartTest Test">
+		<parameter name="browser" value="firefox" />
+		<parameter name="version" value="92.0" />
+		
+		<classes>
+			<class name="com.qa.hubspot.test.ShoppingCartTest" />
+		</classes>
+	</test>
+
+
+
+
+</suite>
+
