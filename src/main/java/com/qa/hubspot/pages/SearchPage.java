@@ -75,7 +75,7 @@ public class SearchPage {
 
 	public Map<String, String> getProductInformation() {
 
-		Map<String, String> productInfoMap = new HashMap<>();
+		Map<String, String> productInfoMap = new HashMap<String, String>();
 
 		List<WebElement> productList = utils.getElements(productInformation);
 
