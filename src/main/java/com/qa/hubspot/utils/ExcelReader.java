@@ -97,7 +97,7 @@ public class ExcelReader {
 				cellvalue = String.valueOf(cell.getNumericCellValue());
 			} else {
 				cell.getCellType();
-				if (CellType.BLANK != null) {
+				if (cell.getCellType()!= null) {
 					return "";
 				} else {
 					cellvalue = String.valueOf(cell.getBooleanCellValue());
