@@ -12,8 +12,8 @@
 	</listeners>
 
 	<test name="LoginPage Test">
-		<parameter name="browser" value="firefox" />
-		<parameter name="version" value="80.0" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="94.0" />
 		<classes>
 			<class name="com.qa.hubspot.test.LoginPageTest" />
 		</classes>
@@ -21,7 +21,7 @@
 
 	<test name="AccountsPage Test">
 		<parameter name="browser" value="chrome" />
-		<parameter name="version" value="87.0" />
+		<parameter name="version" value="94.0" />
 		
 		<classes>
 			<class name="com.qa.hubspot.test.AccountPageTest" />
@@ -29,8 +29,8 @@
 	</test>
 	
 	<test name="ShoppingCartTest Test">
-		<parameter name="browser" value="firefox" />
-		<parameter name="version" value="92.0" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="version" value="94.0" />
 		
 		<classes>
 			<class name="com.qa.hubspot.test.ShoppingCartTest" />
