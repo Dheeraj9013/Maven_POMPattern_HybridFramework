@@ -87,7 +87,7 @@ public class BasePage {
 
 			DesiredCapabilities capability = new DesiredCapabilities();
 			capability.setCapability(ChromeOptions.CAPABILITY,optionmanager.getChromeOptions());
-			capability.setCapability("browserName", "chrome");
+			capability.setCapability("browserName", browser);
 			capability.setCapability("browserVersion", versionname);
 			capability.setCapability("enableVNC", true);
 			
@@ -106,9 +106,9 @@ public class BasePage {
 
 			DesiredCapabilities capability = new DesiredCapabilities();
 			capability.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionmanager.getfireFoxOptions());
-			capability.setCapability("browserName", "firefox");
+			capability.setCapability("browserName", browser);
 			capability.setCapability("browserVersion", versionname);
-			capability.setCapability("enableVNC", true);
+//			capability.setCapability("enableVNC", true);
 			
 
 			try {
