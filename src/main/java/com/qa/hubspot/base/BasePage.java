@@ -108,7 +108,7 @@ public class BasePage {
 			capability.setCapability(FirefoxOptions.FIREFOX_OPTIONS, optionmanager.getfireFoxOptions());
 			capability.setCapability("browserName", browser);
 			capability.setCapability("browserVersion", versionname);
-//			capability.setCapability("enableVNC", true);
+			capability.setCapability("enableVNC", true);
 			
 
 			try {
