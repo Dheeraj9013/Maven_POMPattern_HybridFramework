@@ -12,6 +12,7 @@ agent any
         
         stage('docker-grid') {
             steps {
+               bat "docker network create selenoid"
                bat "docker-compose up -d"
             }
         }
