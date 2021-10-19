@@ -16,6 +16,13 @@ agent any
                bat "docker-compose up -d"
             }
         }
+        
+        stage('Run Test') {
+            steps {
+               
+               bat "mvn clean install"
+            }
+        }
                 
      
         
